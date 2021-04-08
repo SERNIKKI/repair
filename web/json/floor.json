@@ -1,0 +1,13 @@
+[
+  {"id": 1, "building": "1号楼", "floor": "一层"},
+  {"id": 2, "building": "1号楼", "floor": "二层"},
+  {"id": 3, "building": "1号楼", "floor": "三层"},
+  {"id": 4, "building": "1号楼", "floor": "四层"},
+  {"id": 5, "building": "1号楼", "floor": "五层"},
+  {"id": 6, "building": "2号楼", "floor": "一层"},
+  {"id": 7, "building": "2号楼", "floor": "二层"},
+  {"id": 8, "building": "2号楼", "floor": "三层"},
+  {"id": 9, "building": "2号楼", "floor": "四层"},
+  {"id": 10, "building": "2号楼", "floor": "五层"},
+  {"id": 11, "building": "2号楼", "floor": "六层"}
+]

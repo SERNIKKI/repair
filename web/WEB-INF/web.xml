@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindAllServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.FindAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindAllServlet</servlet-name>
+        <url-pattern>/findAllServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>queryServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.area.queryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>queryServlet</servlet-name>
+        <url-pattern>/queryServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>areaAdd</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.area.AreaAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>areaAdd</servlet-name>
+        <url-pattern>/areaAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>areaUpdate</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.area.AreaUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>areaUpdate</servlet-name>
+        <url-pattern>/areaUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>areaDelete</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.area.AreaDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>areaDelete</servlet-name>
+        <url-pattern>/areaDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>equList</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.equ.EquListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>equList</servlet-name>
+        <url-pattern>/equList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>equAdd</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.equ.EquAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>equAdd</servlet-name>
+        <url-pattern>/equAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>equUpdate</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.equ.EquUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>equUpdate</servlet-name>
+        <url-pattern>/equUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>equDelete</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.equ.EquDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>equDelete</servlet-name>
+        <url-pattern>/equDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>repair/upload</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.RepairUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>repair/upload</servlet-name>
+        <url-pattern>/repair/upload</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>repair/list</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.RepairListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>repair/list</servlet-name>
+        <url-pattern>/repair/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>repair/queryAreaAndEquiplist</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.QueryAreaAndEquipList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>repair/queryAreaAndEquiplist</servlet-name>
+        <url-pattern>/repair/queryAreaAndEquiplist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/repair/queryByBuilding</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.QueryByBuilding</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/repair/queryByBuilding</servlet-name>
+        <url-pattern>/repair/queryByBuilding</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/repair/queryByType</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.QueryByEquipType</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/repair/queryByType</servlet-name>
+        <url-pattern>/repair/queryByType</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/repair/add</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.RepairAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/repair/add</servlet-name>
+        <url-pattern>/repair/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/repair/update</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.RepairUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/repair/update</servlet-name>
+        <url-pattern>/repair/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/repair/delete</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.repair.RepairDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/repair/delete</servlet-name>
+        <url-pattern>/repair/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/maintain/list</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.maintain.MaintainListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/maintain/list</servlet-name>
+        <url-pattern>/maintain/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/maintain/finish</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.maintain.MaintainFinishServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/maintain/finish</servlet-name>
+        <url-pattern>/maintain/finish</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/assign/list</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.assign.AssignListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/assign/list</servlet-name>
+        <url-pattern>/assign/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/assign/queryMaintainName</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.assign.QueryMaintainName</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/assign/queryMaintainName</servlet-name>
+        <url-pattern>/assign/queryMaintainName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>/assign/setMaintainUser</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.assign.AssignSetNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>/assign/setMaintainUser</servlet-name>
+        <url-pattern>/assign/setMaintainUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/android/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MaintenanceQueryByUserIdServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.MaintenanceQueryByUserIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MaintenanceQueryByUserIdServlet</servlet-name>
+        <url-pattern>/android/listById</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MaintenanceAreaAndEquipQueryServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.MaintenanceAreaAndEquipQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MaintenanceAreaAndEquipQueryServlet</servlet-name>
+        <url-pattern>/android/areaAndEqu</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MAreaInfoQueryByBuildingServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.MAreaInfoQueryByBuildingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MAreaInfoQueryByBuildingServlet</servlet-name>
+        <url-pattern>/android/queryByBuilding</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MEquipmentQueryByTypeListServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.MEquipmentQueryByTypeListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MEquipmentQueryByTypeListServlet</servlet-name>
+        <url-pattern>/android/queryByType</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MMaintenanceInfoAddServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.android.MMaintenanceInfoAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MMaintenanceInfoAddServlet</servlet-name>
+        <url-pattern>/android/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserAddServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.user.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAddServlet</servlet-name>
+        <url-pattern>/user/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.user.UserDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDeleteServlet</servlet-name>
+        <url-pattern>/user/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserQueryListServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.user.UserQueryListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserQueryListServlet</servlet-name>
+        <url-pattern>/user/queryList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.user.UserUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <url-pattern>/user/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleAddServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.role.RoleAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleAddServlet</servlet-name>
+        <url-pattern>/role/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleDeleteServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.role.RoleDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleDeleteServlet</servlet-name>
+        <url-pattern>/role/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleListServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.role.RoleListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleListServlet</servlet-name>
+        <url-pattern>/role/queryList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleUpdateServlet</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.role.RoleUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleUpdateServlet</servlet-name>
+        <url-pattern>/role/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RoleNameList</servlet-name>
+        <servlet-class>com.qpj.week01.servlet.role.RoleNameList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleNameList</servlet-name>
+        <url-pattern>/role/nameList</url-pattern>
+    </servlet-mapping>
+</web-app>
